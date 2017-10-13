@@ -1,3 +1,5 @@
+package trie;
+
 public class TrieDataStructure implements Trie {
 
     private TrieNode root;
