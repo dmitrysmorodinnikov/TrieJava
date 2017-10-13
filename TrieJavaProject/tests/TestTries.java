@@ -7,14 +7,14 @@ import trie.TrieNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class testTries {
+public class TestTries {
     private static List<Trie> Instances = new ArrayList<>();
 
     static {
         AddToInstances();
     }
 
-    static Trie get(int index)
+    public static Trie get(int index)
     {
         return Instances.get(index);
     }
