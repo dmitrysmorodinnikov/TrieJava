@@ -13,8 +13,7 @@ public class InsertionTest3 {
     private TrieDataStructure _actualTrie;
 
     @Before
-    public void Init()
-    {
+    public void init()  {
         _actualTrie = new TrieDataStructure();
         _actualTrie.insert("abc");
         _actualTrie.insert("abgl");
@@ -24,22 +23,19 @@ public class InsertionTest3 {
     }
 
     @Test
-    public void TestMethod1()
-    {
+    public void testMethod1() {
         _desiredTrie = (TrieDataStructure)TestTries.get(0);
         Assert.assertFalse(new TrieNodeEqualityComparer().Equals(_desiredTrie.getRoot(), _actualTrie.getRoot()));
     }
 
     @Test
-    public void TestMethod2()
-    {
+    public void testMethod2()  {
         _desiredTrie = (TrieDataStructure)TestTries.get(1);
         Assert.assertFalse(new TrieNodeEqualityComparer().Equals(_desiredTrie.getRoot(), _actualTrie.getRoot()));
     }
 
     @Test
-    public void TestMethod3()
-    {
+    public void testMethod3()  {
         _desiredTrie = (TrieDataStructure)TestTries.get(2);
         Assert.assertTrue(new TrieNodeEqualityComparer().Equals(_desiredTrie.getRoot(), _actualTrie.getRoot()));
     }

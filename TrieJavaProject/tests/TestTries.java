@@ -14,20 +14,18 @@ public class TestTries {
         AddToInstances();
     }
 
-    public static Trie get(int index)
-    {
+    public static Trie get(int index) {
         return Instances.get(index);
     }
 
-    private static void AddToInstances()
-    {
+    private static void AddToInstances() {
         Instances.add(Create1());
         Instances.add(Create2());
         Instances.add(Create3());
     }
 
-    private static Trie Create1()//"abc"
-    {
+    //abc
+    private static Trie Create1() {
         TrieDataStructure trie = new TrieDataStructure();
         TrieNode bTrieNode = new TrieNode();
         TrieNode cTrieNode = new TrieNode();
@@ -39,8 +37,8 @@ public class TestTries {
         return trie;
     }
 
-    private static Trie Create2()//"abcd"
-    {
+    //"abcd"
+    private static Trie Create2()  {
         TrieDataStructure trie = new TrieDataStructure();
         TrieNode bTrieNode = new TrieNode();
         TrieNode cTrieNode = new TrieNode();
@@ -54,8 +52,8 @@ public class TestTries {
         return trie;
     }
 
-    private static Trie Create3()//"abc","abgl","cd","abcd", "lmn"
-    {
+    //"abc","abgl","cd","abcd", "lmn"
+    private static Trie Create3()  {
         TrieDataStructure trie = new TrieDataStructure();
         TrieNode bTrieNode = new TrieNode();
         TrieNode lTrieNode = new TrieNode();

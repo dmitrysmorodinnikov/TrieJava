@@ -51,8 +51,7 @@ public class TrieDataStructure implements Trie {
         return curr.getChildren().containsKey(ch) ? curr.getChildren().get(ch) : null;
     }
 
-    private TrieNode addCh(char ch, boolean isLast, TrieNode curr)
-    {
+    private TrieNode addCh(char ch, boolean isLast, TrieNode curr) {
         if (curr.getChildren().containsKey(ch))
             return curr.getChildren().get(ch);
         TrieNode trieNode = new TrieNode(isLast);

@@ -11,50 +11,42 @@ public class SearchTest2 {
     private TrieDataStructure ActualTrie;
 
     @Before
-    public void Init()
-    {
+    public void init() {
         ActualTrie = (TrieDataStructure) TestTries.get(1);
     }
 
     @Test
-    public void TestMethod1()
-    {
+    public void testMethod1() {
         Assert.assertFalse(ActualTrie.search("a"));
     }
 
     @Test
-    public void TestMethod2()
-    {
+    public void testMethod2() {
         Assert.assertFalse(ActualTrie.search("ab"));
     }
 
     @Test
-    public void TestMethod3()
-    {
+    public void testMethod3() {
         Assert.assertTrue(ActualTrie.search("abcd"));
     }
 
     @Test
-    public void TestMethod4()
-    {
+    public void testMethod4() {
         Assert.assertFalse(ActualTrie.search("abc"));
     }
 
     @Test
-    public void TestMethod5()
-    {
+    public void testMethod5() {
         Assert.assertFalse(ActualTrie.search("ak"));
     }
 
     @Test
-    public void TestMethod6()
-    {
+    public void testMethod6() {
         Assert.assertFalse(ActualTrie.search("t"));
     }
 
     @Test
-    public void TestMethod7()
-    {
+    public void testMethod7() {
         Assert.assertFalse(ActualTrie.search("12345"));
     }
 }
